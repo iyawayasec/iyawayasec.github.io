@@ -1,0 +1,145 @@
+/*==============================BODY SECTION=================================*/
+body {
+background-color:silver;
+}
+/*==============================ID SECTION=================================*/
+#header{
+background:darkgreen;
+color:white;
+height:60px;
+line-height:58px;
+margin:20px;
+border-radius:10px;
+text-align:center;
+}
+#navbar ul{
+background:yellow;
+height:30px;
+line-height:28px;
+border-radius:5px;
+padding:10px;
+margin:10px;
+text-align:center;}
+
+#navbar ul li{
+display:inline;
+}
+#navbar ul li a{
+text-decoration:none;
+background:aquamarine;
+color:#fff;
+padding:10px 30px;
+border-radius:5px;
+margin:10px;}
+#navbar ul a:hover{
+background:white;
+color:black;
+}
+#footer ul {
+background:darkgreen;
+border-radius:5px;
+height:60px;
+padding:10px;
+margin:5px;
+list-style-type:none;
+clear:both;
+text-align:center;
+}
+#footer ul li{
+display:inline;
+}
+#footer ul li a{
+text-decoration:none;
+background:purple;
+color:yellow;
+line-height:60px;
+padding:15px 20px;
+margin:0 25px;
+clear:both;
+}
+#footer ul li a:hover{
+background:yellow;
+color:purple;
+}
+#container{
+background:aqua;
+margin:10px;
+width:700px;
+height:400px
+border-radius:10px;
+text-align:center;
+display:grid;
+grid-template-columns:1fr 2fr 1fr;
+grid-template-rows:auto 100px;
+}
+/*========================================CLASS SECTION==================*/
+.main{
+background:aqua;
+border-radius:10px;
+margin:10px;
+}
+.main2{
+background:aqua;
+border-radius:5px;
+padding:20px;
+margin:0px 10px 10px 10px;
+}
+.sidebar{
+background:fuchsia;
+border-radius:5px;
+padding:20px;
+margin:0px 10px 10px 10px;
+float:left;
+width:250px;
+clear:right;
+}
+
+
+.imagesidebar{
+border-radius:10px;
+margin:10px;
+width:290px;
+float:right;
+clear:right;
+opacity:1.0;
+transition:opacity 0.5s ease-in-out;
+}right
+.imagesidebar:hover{
+opacity:0.5;
+}
+
+/*==============================HEADER SECTION=================================*/
+h1{fon:250% "century gothic","gil sans",aerial,serif;}
+.vdeyo{background-color:blue;
+margin:0;
+padding:0;}
+
+.side-dropdown{
+position:relative;
+display:inline-block;}
+
+.side-dropdown summary{
+cursor:pointer;
+list-style:none;
+background-color:f0f0f0;
+padding:10px;
+border:1px solid #ccc;}
+
+.side-dropdown summary::-webkit-details-marker{
+display:none;}
+
+
+.dropdown-menu {
+position:absolute;
+display:none;
+top:0;
+left:100%;
+background-color:white;
+min-width:150px;
+z-index:1;
+box-shadow:2px 4px 10px rgba(0,40,30,0.5);
+}
+
+.side-dropdown[open]
+.dropdown-menu {
+display:block;}
