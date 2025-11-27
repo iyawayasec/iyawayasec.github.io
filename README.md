@@ -1,0 +1,1 @@
+"Shule ya sekondari ya iyawaya inapatikana kata ya inyala katika halmashauri wa wilaya ya Mbeya mkoa wa Mbeya.Shule hii iko umbali wa kilomita 22 tu kutoka stendi kuu ya mabasi ya MBEYA.Karibuni shule ya sekondari Iyawaya"
