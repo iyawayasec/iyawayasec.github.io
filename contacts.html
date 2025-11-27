@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta char-set="utf-8"/>
+<meta name="view-port"content="width=device-width,initial-scale=1"/>
+
+
+
+  <!-- Bootstrap v5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"><link rel="stylesheet"type="text/css"href="stylesheet.css">
+<title>
+CONTACTS:
+</title>
+<style>
+body {
+background-color:silver;
+font-size:20px;
+margin:10px;
+color:black;
+}
+#contact{
+width:100%;
+height:auto;
+font-size:20px;
+margin:20px;
+color:black;
+font-weight:bolder;
+overflow-x:hidden;
+justify-content:center;
+}
+
+#map-container iframe{
+top:50px;
+width:100%;
+height:100%;
+}
+ .whatsapp-btn {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #25D366; /* WhatsApp green */
+      color: white;
+      padding: 1rem 1rem;
+      border-radius: 0.5rem;
+      min-width: 620px; /* narrower */
+      height: 90px; /* taller */
+      text-align: center;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .whatsapp-btn svg {
+      margin-bottom: 0.3rem;
+    }
+    .whatsapp-btn span {
+      font-size: 0.9rem;
+    }
+
+  .gmail-btn {
+    background: orange;
+    width: 36%;
+    color: white;
+  }
+
+  /* Force the same width even on very small screens */
+  @media (max-width: 768px) {
+    .gmail-btn {
+      width: 50% !important;
+    }
+  }
+
+@media (max-width:768px;){
+#contact{
+width:100%;
+height:auto;
+font-size:20px;
+margin:20px;
+color:black;
+font-weight:bolder;
+overflow-x:hidden;
+justify-content:center;
+}
+
+#map-container{
+width:96%;
+height:1024px;
+}
+#map-container iframe{
+top:30px;
+width:96%;
+height:1024px;
+}
+}
+</style>
+
+</head>
+<body>
+ <section id="contact" class="container-fluid p-4" style="min-height: 100vh; background-color: black; color: yellow;">
+   <div class="text-center text-warning mb-4" style="font-size: 1.2rem;">
+    <h1 class="headline" style="font-size: 3rem;color:white;">Contact Us Through</h1>
+    <strong style="font-size: 1.5rem;">PO-RALG</strong><br><br>
+    <strong style="font-size: 1.5rem;">Mbeya District Council</strong><br><br>
+	    <strong style="font-size: 1.5rem;">Iyawaya Secondary School</strong><br><br>
+    <span style="font-size: 1.7rem;">P.O Box 2407,</span><br><br>
+  </div>
+
+ <!-- Phone Button -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="btn btn-outline-success d-flex flex-column align-items-center p-3" style="width: 70%; background-color: #ff00f0; color: white; font-size: 1.7rem;border-radius:15px;">
+      <i class="bi bi-telephone-fill mb-2" style="font-size: 2rem;"></i>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <span></span><br>
+        <a href="tel:+255758579766" class="text-success text-decoration-none" style="font-size: 1.7rem;color: white;">+255758579766</a>
+		&nbsp or &nbsp
+        <a href="tel:+255765669294" class="text-success text-decoration-none" style="font-size: 1.7rem;color: white;">+255765669294</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <div class="d-flex justify-content-center mb-4">
+    <a href="https://wa.me/+255758579766" target="_blank" class="btn d-flex align-items-center gap-2 p-3" style="width: 36%; background-color: #25D366; color: white; font-size: 1.7rem;border-radius:15px;">
+      <i class="bi bi-whatsapp" style="font-size: 2rem;"></i>
+<span>+255758579766 </span><br>
+    </a>
+	
+	 <a href="https://wa.me/+255765669294" target="_blank" class="btn d-flex align-items-center gap-2 p-3" style="width: 36%; background-color: #25D366; color: white; font-size: 1.7rem;border-radius:15px;">
+      <i class="bi bi-whatsapp" style="font-size: 2rem;"></i><br>
+<span>+255765669294</span>
+    </a>
+  </div>
+  
+  <!-- Gmail Button -->
+  <div class="d-flex justify-content-center mb-4">
+    <a href="mailto:iyawayasec@gmail.com" class="btn d-flex flex-column align-items-center p-3" style="width: 70%; background: orange; color: white; font-size: 1.7rem;border-radius:15px;">
+      <i class="bi bi-envelope-fill mb-1" style="font-size: 2rem; color: white;"></i>
+      <span class="fw-bold">Email:&nbsp iyawayasec@gmail.com</span>
+    </a>
+  </div>  
+    <br><br> 
+	
+  <!-- Map Section -->
+  <div class="text-center mb-4">
+    <strong style="font-size: 1.5rem;">YOU CAN FIND US ON MAPS</strong>
+    <div class="map-container mt-2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492.7584075637617!2d33.64021472902608!3d-8.873330871706104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x190083d06a1c0d07%3A0x45dc7d320d94c6db!2sIYAWAYA%20SECONDARY%20SCHOOL!5e0!3m2!1sen!2stz!4v1759750271495!5m2!1sen!2stz" 
+        width="100%" style="border:0; height:80vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+ 
+ 
+ 
+ 
+ 
+  <script>
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    const selector = document.getElementById('whatsappSelector');
+    const closeBtn = document.getElementById('closeSelector');
+
+    whatsappBtn.addEventListener('click', () => {
+      selector.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      selector.style.display = 'none';
+    });
+
+    // Optional: close selector if clicking outside
+    window.addEventListener('click', (e) => {
+      if (!selector.contains(e.target) && e.target !== whatsappBtn) {
+        selector.style.display = 'none';
+      }
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
