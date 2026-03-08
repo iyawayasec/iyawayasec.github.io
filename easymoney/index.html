@@ -1,1 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EASYMONEY MICROFINANCE</title>
 
+<style>
+
+/*#loader{
+position:fixed;inset:0;
+display:flex;align-items:center;justify-content:center;
+flex-direction:column;
+background:#f8f9fa;
+z-index:9999;
+}
+.fade-out{
+opacity:0;
+visibility:hidden;
+transition:.5s ease;
+}  */
+
+
+/*Basic form styling */
+
+#loanForm{
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+
+
+form input{
+padding:12px;
+border-radius:8px;
+border:1px solid #e2e8f0;
+font-size:14px;
+transition:0.3s;
+border:1px solid #ccc;
+border-radius:8px;
+width:100%;
+}
+input:focus{
+border-color:#ff46e5;
+outline:none;
+box-shadow:0 0 0 3px rgba(79,70,229,0.1);
+}
+
+
+form label{
+font-weight:600;
+margin-top:10px;
+}
+
+form button{
+margin-top:15px;
+}
+
+
+
+
+
+	/* Rescue Form Styling */
+	
+#loanForm{
+display:none;
+background:#f0edf0;
+
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
+
+}
+
+#rescueForm {
+background:#00ffd4;
+}
+
+#rescueForm input{
+background:#ffefff;
+}
+
+#rescueForm input:focus{
+background:#f4f0f4;
+
+}
+
+.form-container{
+max-width:600px;
+margin:auto;
+background:#ffffff;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+
+.form-container h2{
+text-align:center;
+margin-bottom:25px;
+color:#4f46e5;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+margin-bottom:15px;
+}
+
+.form-group label{
+font-weight:600;
+margin-bottom:6px;
+font-size:14px;
+}
+
+.form-group input{
+padding:12px;
+border-radius:8px;
+border:1px solid #e2e8f0;
+font-size:14px;
+transition:0.3s;
+}
+
+.form-group input:focus{
+border-color:#ff0000;
+outline:none;
+box-shadow:0 0 0 3px rgba(79,70,229,0.1);
+}
+
+.terms-box{
+background:#f1f5f9;
+padding:15px;
+border-radius:10px;
+height:130px;
+overflow:auto;
+font-size:20px;
+margin-bottom:15px;
+}
+
+.checkbox{
+display:flex;
+align-items:center;
+gap:8px;
+margin-bottom:12px;
+}
+
+.checkbox input{
+width:auto;
+margin:0;
+}
+
+.checkbox label{
+cursor:pointer;
+font-size:14px;
+}
+
+.submit-btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:30px;
+background:#4f46e5;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+
+.submit-btn:hover{
+background:#4338ca;
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+	
+	    .button {
+      padding: 0.9rem 2rem;
+      background: #fff;
+      color: var(--primary);
+      border-radius: 50px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn {
+      padding: 0.9rem 2rem;
+      background: #F2D1F2;
+      color: var(--primary);
+      border-radius: 50px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .cta {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-radius: 20px;
+    }
+
+    .cta h2 {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        display: none;
+      }
+    }
+	
+	
+</style>
+</head>
+<body>
+<!-- Spinner Overlay -->
+<!--<div id="loader">
+<div class="text-center p-4 rounded-4 bg-white shadow">
+<div class="spinner-border text-primary mb-3" style="width:4rem;height:4rem;" role="status"></div>
+<h4 class="fw-bold"><strong style="color:orange;font:15px;"><span>IYAWAYA SECONDARY<br></span></strong> <strong style="color:blue;font:15px;">SCHOOL</strong> </h4>
+<p class="text-muted">Loading, please wait...</p>
+</div>
+</div>		--> 
+
+
+<header>
+  <nav>
+    <h1>EasyMoney RESCUE</h1>
+    <ul>
+      <li><a href="#features">CashOut</a></li>
+      <li><a href="#about">Whatzit</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Get Urgent Financial Support</h2>
+    <p>EasyMoney helps you get a quick financial support within a minute simply by filling and submitting a RESCUE-ME FORM to our RESCUE TEAM.</p>
+    <button class="button" onclick="scrollToSection('features')">RESCUE-ME</button>
+  </div>
+</section>
+
+<section id="features">
+  <h2 style="text-align:center; margin-bottom:2rem;">CashOut</h2>
+  <p style="text-align:center; margin-bottom:1.5rem;font-weight:bolder">Select the amount to cash out in Tanzanian shillings.</p>
+  <div class="features">
+    <div class="card">
+      <h3>$ Rescue TZS 50,000/=</h3>
+      <p>GET TZS 50,000/= to cover your unexpected emergencies ranging from home basic NEEDS (Foodstuffs,house reparation,kids-clothing,spouse-caring and family health) and wants (car reparation,tuition fees,water and electricity bills) all within a minute .</p>
+      <h3>REFUND TZS 58,500/=</h3>
+	  <button class="btn" onclick="openForm('50000')">Send Request</button>
+   </div>    
+   <div class="card">
+      <h3>$ Rescue TZS 100,000/=</h3>
+      <p>GET TZS 100,000/= to cover your unexpected emergencies ranging from home basic NEEDS (Foodstuffs,house reparation,kids-clothing,spouse-caring and family health) and wants (car reparation,tuition fees,water and electricity bills) all within a minute .</p>
+      <h3>REFUND TZS 117,000/=</h3>
+	  <button class="btn" onclick="openForm('100000')">Send Request</button>
+   </div> 
+   <div class="card">
+      <h3>$ Rescue TZS 150,000/=</h3>
+      <p>GET TZS 150,000/= to cover your unexpected emergencies ranging from home basic NEEDS (Foodstuffs,house reparation,kids-clothing,spouse-caring and family health) and wants (car reparation,tuition fees,water and electricity bills) all within a minute .</p>
+      <h3>REFUND TZS 175,500/=</h3>
+	  <button class="btn" onclick="openForm('150000')">Send Request</button>
+   </div>   
+   <div class="card">
+      <h3>$ Rescue TZS 200,000/=</h3>
+      <p>GET TZS 200,000/= to cover your unexpected emergencies ranging from home basic NEEDS (Foodstuffs,house reparation,kids-clothing,spouse-caring and family health) and wants (car reparation,tuition fees,water and electricity bills) all within a minute .</p>
+      <h3>PAY INTEREST ON THE SPOT...REFUND TZS 200,000/=</h3>
+	  <button class="btn" onclick="openForm('200000')">Send Request</button>
+   </div>
+
+   <div class="card">
+      <h3>$ Rescue From TZS 250,000/= and above</h3>
+      <p>GET from TZS 250,000/=  and above to cover your unexpected emergencies ranging from home basic NEEDS (Foodstuffs,house reparation,kids-clothing,spouse-caring and family health) and wants (car reparation,tuition fees,water and electricity bills) all within a minute .</p>
+      <h3>PAY INTEREST ON THE SPOT...REFUND TZS 250,000/=OR LARGER CashOut</h3>
+      <button class="btn" onclick="openCustomForm()">Send Request</button>   </div>
+  </div>
+</section>
+
+
+<section id="loanForm"style="display:none;">
+
+<div class="form-container">
+
+    <h2>Rescue Request Form</h2>
+
+<form id="rescueForm">
+
+<input type="hidden" id="request_time" name="request_time">
+
+   <div class="form-group">
+    <label>Requested Loan Amount (TZS)</label>
+    <input type="number" id="loanAmount" name="loanAmount" required>
+   </div>
+   <div class="form-group">
+    <label>Full Name</label>
+    <input type="text" name="fullname" required>
+    </div>
+	
+   <div class="form-group">
+    <label>Phone Number</label>
+    <input type="tel" name="phone" required>
+    </div>  
+	
+   <div class="form-group">
+    <label>ID Number (Student ID / Business ID / NIN)</label>
+    <input type="text" name="idnumber" required>
+  </div>
+
+<div class="form-group">
+    <label>Home Address</label>
+    <input type="text" name="address" required>
+ </div>
+
+<div class="form-group">
+    <label>Email Address (Optional)</label>
+    <input type="email" name="email">
+ </div>
+ 
+ <div class="form-group">
+    <label>Street</label>
+    <input type="text" name="street" required>
+ </div>
+ 
+ <div class="form-group">
+    <label>Ward</label>
+    <input type="text" name="ward" required>
+ </div>
+
+<div class="form-group">
+  <label>Upload Photo</label>
+  <input type="file" name="photo" accept="image/*" capture>
+</div>
+
+   <div class="terms-box">
+      <h4>Terms and Conditions</h4>
+      <p>
+      By submitting this form you confirm that all information provided is correct.
+      EasyMoney may verify your identity and contact details. Failure to repay the
+      rescue amount may result in penalties according to the agreement terms.
+
+      </p>
+    </div>
+
+<div class="checkbox">
+     <input type="checkbox" id="termsCheck" required>
+     <label for="termsCheck">I accept the terms and conditions</label>
+</div>
+    <button class="btn" type="submit">Submit Rescue Request</button>
+
+  </form>
+  </div>
+</section>
+
+
+<!--<section id="loanForm">
+
+<div class="form-container">
+
+<h2>Rescue Request Form</h2>
+
+<form id="rescueForm">
+
+<input type="hidden" id="request_time" name="request_time">
+
+<div class="form-group">
+<label>Requested Loan Amount (TZS)</label>
+<input type="number" id="loanAmount" name="loanAmount" required>
+</div>
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" name="fullname" required>
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
+</div>
+
+<div class="form-group">
+<label>ID Number (Student ID / Business ID / NIN)</label>
+<input type="text" name="idnumber" required>
+</div>
+
+<div class="form-group">
+<label>Home Address</label>
+<input type="text" name="address" required>
+</div>
+
+<div class="form-group">
+<label>Email Address (Optional)</label>
+<input type="email" name="email">
+</div>
+
+<div class="form-group">
+<label>Street</label>
+<input type="text" name="street" required>
+</div>
+
+<div class="form-group">
+<label>Ward</label>
+<input type="text" name="ward" required>
+</div>
+
+<div class="form-group">
+<label>Upload Photo</label>
+<input type="file" name="photo" accept="image/*" required>
+</div>
+
+<div class="terms-box">
+<h4>Terms and Conditions</h4>
+<p>
+By submitting this form you confirm that all information provided is correct.
+EasyMoney may verify your identity and contact details. Failure to repay the
+rescue amount may result in penalties according to the agreement terms.
+</p>
+</div>
+
+<div class="checkbox">
+<input type="checkbox" id="termsCheck" required>
+<label for="termsCheck">I accept the terms and conditions</label>
+</div>
+
+<button class="submit-btn" type="submit">
+Submit Rescue Request
+</button>
+
+</form>
+
+</div>
+</section> -->
+
+<section id="about">
+  <div class="about">
+    <div>
+      <h2>About EasyMoney</h2>
+      <p>
+        EasyMoney is an online platform aiming to offer fast financial support to salaried GOVERNMENT and NGO's employees with ease at home! making it unnecessary to visit a physical bank for the service.
+      </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1714102367653-fe3fc6e9a61d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="workspace">
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <h2>Having Problems?</h2>
+  <p>If you are having problems while already sent your request to the team.</p>
+  <button class="button"><a  style="text-decoration:none;"href="contacts.html">Get help</a></button>
+</section>
+
+<footer>
+  © 2026 EasyComesEasyGoes. All rights reserved.
+</footer>
+
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+<!--Form validation JavaScript-->
+<script>
+function openForm(amount){
+
+document.getElementById("loanForm").style.display="block";
+
+document.getElementById("loanAmount").value=amount;
+
+document.getElementById("loanAmount").readOnly=true;
+
+document.getElementById("loanForm").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+function openCustomForm(){
+
+document.getElementById("loanForm").style.display="block";
+
+document.getElementById("loanAmount").value="";
+
+document.getElementById("loanAmount").readOnly=false;
+
+document.getElementById("loanForm").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+
+(function(){
+emailjs.init("ecIhezkGltMtDW9Bq");
+})();
+
+document.getElementById("rescueForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const now = new Date();
+    document.getElementById("request_time").value =
+        now.toLocaleDateString() + " " + now.toLocaleTimeString();
+
+    const form = this;
+
+    // ✅ Always skip photo for submission
+    const photoInput = form.querySelector("input[name='photo']");
+    if(photoInput) photoInput.disabled = true;
+
+    emailjs.sendForm("service_qzj0rll", "template_t0rabcm", form)
+    .then(function(){
+        alert("✅ Rescue request sent successfully!");
+        form.reset();
+        if(photoInput) photoInput.disabled = false; // re-enable for next submission
+    }, function(error){
+        alert("❌ Failed to send request");
+        console.log(error);
+        if(photoInput) photoInput.disabled = false;
+    });
+});
+</script>
+<!--<script>
+function sendSMS(data){
+
+fetch("https://api.twilio.com/2010-04-01/Accounts/YOUR_SID/Messages.json",{
+
+method:"POST",
+
+headers:{
+"Authorization":"Basic " + btoa("YOUR_SID:YOUR_AUTH_TOKEN"),
+"Content-Type":"application/x-www-form-urlencoded"
+},
+
+body:new URLSearchParams({
+
+To:"+255YOUR_PHONE_NUMBER",
+
+From:"+1234567890",
+
+Body:`EasyMoney Rescue Request
+
+Amount: TZS ${data.loanAmount}
+
+Name: ${data.fullname}
+
+Phone: ${data.phone}
+
+Ward: ${data.ward}
+
+Time: ${data.request_time}`
+
+})
+
+})
+
+.then(res=>res.json())
+.then(data=>console.log("SMS Sent"))
+.catch(err=>console.log(err));
+
+}
+</script> -->
+
+
+</body>
+</html>
+
+<!--
+<script>
+function openForm(amount) {
+    // For predefined amounts
+    document.getElementById("loanForm").style.display = "block";
+
+    document.getElementById("loanAmount").value = amount;
+    document.getElementById("loanAmount").readOnly = true; // cannot change
+
+    document.getElementById("loanForm").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function openCustomForm() {
+    // Ask user for custom amount
+    let amount = prompt("Enter the amount you want to request (TZS):");
+	
+	/* !isNaN(amount)
+
+isNaN() stands for “is Not a Number”.
+
+isNaN(amount) returns true if the value is NOT a number (e.g., "abc").
+
+Adding ! flips it → !isNaN(amount) is true only if the value IS a number.
+
+✅ Example:
+
+isNaN("123")   // false → it IS a number
+!isNaN("123")  // true → valid number
+
+isNaN("abc")   // true → not a number
+!isNaN("abc")  // false → invalid */
+
+    if(amount && !isNaN(amount) && Number(amount) > 0){
+        document.getElementById("loanForm").style.display = "block";
+
+        document.getElementById("loanAmount").value = amount;
+        document.getElementById("loanAmount").readOnly = false; // editable
+
+        document.getElementById("loanForm").scrollIntoView({
+            behavior: "smooth"
+        });
+    } else if(amount !== null){
+        alert("Please enter a valid number greater than 0");
+    }
+}
+</script>
