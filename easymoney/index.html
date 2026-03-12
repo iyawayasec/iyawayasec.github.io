@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/easymoney/logo.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EasyMoney Microfinance – Fast Emergency Loans in Tanzania</title>
+  <title>EASYMONEY MICROFINANCE</title>
 
-  <meta name="description" content="EasyMoney Rescue provides quick emergency financial support in Tanzania. Request fast loans online within minutes.">
-
-  <meta name="keywords" content="EasyMoney, emergency loan Tanzania, fast loan Tanzania, quick loan Dar es Salaam, online microfinance Tanzania">
-
-  <meta name="author" content="EasyMoney Rescue">
-
-  <meta name="robots" content="index, follow">
-
-  <link rel="canonical" href="https://www.iyawayasec.co.tz/easymoney/">
-	
-<!--social preview -->
-  <meta property="og:title" content="EasyMoney Rescue – Fast Emergency Loans">
-  <meta property="og:description" content="Get urgent financial support within minutes using EasyMoney Rescue.">
-  <meta property="og:image" content="https://www.iyawayasec.co.tz/easymoney/preview.jpg">
-  <meta property="og:url" content="https://www.iyawayasec.co.tz/easymoney/">
-  <meta property="og:type" content="website">
-
-  <!--social/twitter card--> 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EasyMoney Rescue">
-  <meta name="twitter:description" content="Fast emergency financial support in Tanzania.">
-  <meta name="twitter:image" content="https://www.iyawayasec.co.tz/easymoney/preview.jpg">
-
-
-	
 <style>
-	
+
 /*#loader{
 position:fixed;inset:0;
 display:flex;align-items:center;justify-content:center;
@@ -375,6 +349,69 @@ box-shadow:0 10px 20px rgba(0,0,0,0.15);
       font-size: 0.9rem;
     }
 
+
+/* FULL SCREEN TERMS MODAL */
+
+#termsSection{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.85);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:9999;
+}
+
+.terms-container{
+background:white;
+width:90%;
+max-width:800px;
+height:90vh;
+border-radius:12px;
+display:flex;
+flex-direction:column;
+overflow:hidden;
+}
+
+.terms-header{
+background:#4f46e5;
+color:white;
+padding:15px;
+font-size:20px;
+text-align:center;
+}
+
+.terms-content{
+flex:1;
+padding:20px;
+overflow-y:auto;
+line-height:1.7;
+}
+
+.terms-footer{
+padding:15px;
+border-top:1px solid #ddd;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.terms-footer button{
+padding:10px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.close-btn{
+background:#ccc;
+}
+
+
+
     @media (max-width: 768px) {
       .hero h2 {
         font-size: 2.2rem;
@@ -388,21 +425,9 @@ box-shadow:0 10px 20px rgba(0,0,0,0.15);
         display: none;
       }
     }
-	
-</style>
 
-  <script type="application/ld+json">
-   {
-   "@context": "https://schema.org",
-   "@type": "FinancialService",
-   "name": "EasyMoney Rescue",
-   "url": "https://www.iyawayasec.co.tz/easymoney/",
-   "description": "Online platform offering fast emergency financial support in Tanzania.",
-   "areaServed": "Tanzania",
-   "serviceType": "Emergency Loan Service"
-   }
-  </script>
-	
+
+</style>
 </head>
 <body>
 <!-- Spinner Overlay -->
@@ -428,8 +453,8 @@ box-shadow:0 10px 20px rgba(0,0,0,0.15);
 
 <section class="hero">
   <div>
-    <h1>Get Urgent Financial Support in Tanzania</h1>   
-	  <p>EasyMoney helps you get a quick financial support within a minute simply by filling and submitting a RESCUE-ME FORM to our RESCUE TEAM.</p>
+    <h2>Get Urgent Financial Support</h2>
+    <p>EasyMoney helps you get a quick financial support within a minute simply by filling and submitting a RESCUE-ME FORM to our RESCUE TEAM.</p>
     <button class="button" onclick="scrollToSection('features')">RESCUE-ME</button>
   </div>
 </section>
@@ -521,26 +546,84 @@ box-shadow:0 10px 20px rgba(0,0,0,0.15);
     <input type="text" name="ward" required>
  </div>
 
-<div class="form-group">
-  <label>Upload Photo</label>
-  <input type="file" name="photo" accept="image/*" capture>
+ <!--termsSection button-->
+<button type="button" class="btn" onclick="showTerms()">
+Read Terms and Conditions
+</button>
+
+
+<!--termsSection starts here-->
+
+
+<!-- FULL SCREEN TERMS -->
+
+<div id="termsSection">
+
+<div class="terms-container">
+
+<div class="terms-header">
+Terms and Conditions
 </div>
 
-   <div class="terms-box">
-      <h4>Terms and Conditions</h4>
-      <p>
-      By submitting this form you confirm that all information provided is correct.
-      EasyMoney may verify your identity and contact details. Failure to repay the
-      rescue amount may result in penalties according to the agreement terms.
+<div class="terms-content">
 
-      </p>
-    </div>
+<p>
+By submitting this form you confirm that all information provided is correct.
+EasyMoney may verify your identity and contact details.
+</p>
+
+<p>
+Failure to repay the rescue amount may result in penalties according to
+the agreement terms.
+</p>
+
+<p>
+You agree that EasyMoney may contact you via phone,
+SMS or email regarding your rescue request.
+</p>
+
+<h3>Collateral Information</h3>
+
+<div class="form-group">
+<label>Collateral 1</label>
+<input type="text" name="collateral1" placeholder="Example: Motorcycle / Land / Salary">
+</div>
+
+<div class="form-group">
+<label>Collateral 2</label>
+<input type="text" name="collateral2">
+</div>
+
+<div class="form-group">
+<label>Collateral 3</label>
+<input type="text" name="collateral3">
+</div>
+
+<div class="form-group">
+<label>Upload Photo or Take Selfie</label>
+<input type="file" name="photo" accept="image/*" capture="user">
+</div>
 
 <div class="checkbox">
-     <input type="checkbox" id="termsCheck" required>
-     <label for="termsCheck">I accept the terms and conditions</label>
+<input type="checkbox" id="termsCheck" required>
+<label for="termsCheck">I accept the terms and conditions</label>
 </div>
-    <button class="btn" type="submit">Submit Rescue Request</button>
+
+<button class="btn" type="submit">Submit Rescue Request</button>
+
+</div>
+
+<div class="terms-footer">
+<button class="close-btn" onclick="closeTerms()">Close</button>
+</div>
+
+</div>
+
+</div>
+<!--termsSection ends here-->
+
+
+</div>
 
   </form>
   </div>
@@ -633,8 +716,8 @@ Submit Rescue Request
         EasyMoney is an online platform aiming to offer fast financial support to salaried GOVERNMENT and NGO's employees with ease at home! making it unnecessary to visit a physical bank for the service.
       </p>
     </div>
-     <img src="https://images.unsplash.com/photo-1714102367653-fe3fc6e9a61d" alt="EasyMoney financial support service in Tanzania">  
-    </div>
+    <img src="https://images.unsplash.com/photo-1714102367653-fe3fc6e9a61d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="workspace">
+  </div>
 </section>
 
 <section class="cta" id="contact">
@@ -647,12 +730,38 @@ Submit Rescue Request
   © 2026 EasyComesEasyGoes. All rights reserved.
 </footer>
 
+<!--Form scrollIntoView JavaScript-->
 <script>
   function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({
       behavior: "smooth"
     });
   }
+</script>
+
+<!--Terms scrollIntoView JavaScript-->
+<!--<script>
+function showTerms(){
+
+const terms = document.getElementById("termsSection");
+
+terms.style.display = "block";
+
+terms.scrollIntoView({
+behavior: "smooth"
+});
+
+}
+</script>-->
+
+<script>
+function showTerms(){
+document.getElementById("termsSection").style.display = "flex";
+}
+
+function closeTerms(){
+document.getElementById("termsSection").style.display = "none";
+}
 </script>
 <!--Form validation JavaScript-->
 <script>
@@ -684,7 +793,7 @@ behavior:"smooth"
 
 </script>
 
-
+<!--EmailJS  contentVisibility JavaScript-->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
