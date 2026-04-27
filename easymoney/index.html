@@ -804,7 +804,7 @@ behavior:"smooth"
 <!--EmailJS  contentVisibility JavaScript-->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<script>
+<!--<script>
 
 (function(){
 emailjs.init("ecIhezkGltMtDW9Bq");
@@ -834,7 +834,46 @@ document.getElementById("rescueForm").addEventListener("submit", function(e){
         if(photoInput) photoInput.disabled = false;
     });
 });
+</script>-->
+
+
+<script>
+	(function(){
+emailjs.init("ecIhezkGltMtDW9Bq");
+})();
+
+document.getElementById("rescueForm").addEventListener("submit", function(e){
+
+    if(!document.getElementById("termsCheck").checked){
+        alert("Please accept Terms and Conditions");
+        return;
+    }
+
+    e.preventDefault();
+
+    const now = new Date();
+    document.getElementById("request_time").value =
+        now.toLocaleDateString() + " " + now.toLocaleTimeString();
+
+    const form = this;
+
+    const photoInput = form.querySelector("input[name='photo']");
+    if(photoInput) photoInput.disabled = true;
+
+    emailjs.sendForm("service_qzj0rll", "template_t0rabcm", form)
+    .then(function(){
+        alert("✅ Rescue request sent successfully!");
+        form.reset();
+        if(photoInput) photoInput.disabled = false;
+    }, function(error){
+        alert("❌ Failed to send request: " + error.text);
+        console.log("FULL ERROR:", error);
+        if(photoInput) photoInput.disabled = false;
+    });
+
+});
 </script>
+	
 <!--<script>
 function sendSMS(data){
 
