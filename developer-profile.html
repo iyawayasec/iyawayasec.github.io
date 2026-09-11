@@ -1,49 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="policy-definition">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-<link rel="stylesheet" type="text/css" href="lightbox.min.css">
-<link rel="stylesheet" href="font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-<title>
-DEVELOPER:
-</title>
-<style>
-body{
-background-color:silver;
-font-size:20px;
-margin:30px;
-color:black;
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+    .custom-navbar {
+      background-color: aqua !important;
+    }
+
+    .custom-navbar .navbar-brand {
+      color: orange !important;
+      font-weight: bold;
+    }
+
+    .custom-navbar .nav-link {
+      color: black !important;
+      font-weight: 500;
+    }
+
+    .custom-navbar .nav-link:hover {
+      color: orange !important;
+    }
+
+.carousel-item {
+  height: 90vh;
+   /* height: 500px;*/
+
 }
-</style>
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' if you want full fill */
+  background:silver;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 90vh;
+    background-color: black; /* fills gaps */
+  }
+}
+
+body {
+  padding-top: 40px; /* match navbar height */
+}
+  </style>
 </head>
+
 <body>
 
 
-<div class="staff"style="width:96vw;height:auto;ms-auto">
-<p class="mwalimu">MWALIMU KULEHA'S BIOGRAPHY<a target="_blank"href="my-life.html
-"><img src="default_bg_images/IMG-20230227-WA0017.jpg" width="100%" height="auto"loading="lazy"class="sulphuric acid"alt="competent teacher ever"/>
-</a></p> 
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">KULEHA KABILAMHYA MPANGAMCHU</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="my-life.html">My Life</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="location.html">location</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contacts</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="default_bg_images/IMG-20230227-WA0007.jpg" alt="Full Stack">
+      <div class="carousel-caption text-start">
+        <h1 class="display-3 fw-bold"><em>Smart Teacher</em></h1>
+        <p><strong style=" color: orange;">Full Stack Web and App Developer </strong></p>
+        <a href="contact.html" class="btn btn-primary">Contact Him</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+         <img src="developer/Screenshot_20260911_230611_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption text-start">
+          <p><strong style=" color: yellow; font-size: 24;">Programming Languages Mastered:</strong></p>
+        <h1 class="display-3 fw-bold"><em>Python and JavaScript</em></h1>
+      </div>
+    </div>
+    
+    <div class="carousel-item">
+      <img src="developer/Screenshot_20260911_230704_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Expo & React Native</h1>
+      </div>
+    </div>
+     
+         
+    <div class="carousel-item">
+      <img src="developer/Screenshot_20260911_230359_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Django Rest Framework & Postgresql DBMS</h1>
+      </div>
+    </div>
+        
+    <div class="carousel-item">
+      <img src="bgs/IMG-20230227-WA0017.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Bootstrap,Git VCS/CI/CD & ReactJS</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+        <img src="default_bg_images/IMG-20230227-WA0005.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+         <h1>Html, Css & Vanilla JS</h1>
+      </div>
+    </div>     
+
+    <div class="carousel-item">
+      <img src="bgs/20251013_085406_001.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>From PUGU BOYS SECONDARY SCHOOL</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="default_bg_images/IMG-20250109-WA0019.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Of Mwanza Descendence</h1>
+      </div>
+    </div> 
+
+    <div class="carousel-item">
+      <img src="default_bg_images/IMG-20230227-WA0005.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Amazing Full Stack</h1>
+      </div>
+    </div>
+
+             
+    <div class="carousel-item">
+      <img src="developer/Screenshot_20260911_231805_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Amazing Full Stack</h1>
+      </div>
+    </div>
+
+  </div>
+
+
+<div class="my-profile" style="margin:10px;">
+<p class="mwalimu">MWALIMU KULEHA'S BIOGRAPHY
+
+<!--<a target="_blank"href="my-life.html">
+<img src="default_bg_images/IMG-20230227-WA0017.jpg" width="100%" height="auto"loading="lazy"class="sulphuric acid"alt="competent teacher ever"/>
+</a> -->
+
+</p> 
 <p>
-Kuleha Kabilamhya Mpangamchu (a. k. a Google) is a teacher at iyawaya secondary school located in Inyala ward in Mbeya region, Tanzania. 
+Kuleha Kabilamhya Mpangamchu (a. k. a Google) is a teacher at iyawaya secondary school located in Inyala ward in Mbeya region, Tanzania.
+</p> 
 
+<p>
 He was born on 01 July 1995 at Mondo village in Kahama Town council , Tanzania. 
-<br><br>
+</p><br><br>
 
+<p>
 He started his educational journey in 2002 at Mondo Primary School and later joined Secondary Education at.....
-<a href="my-life.html">read more
+<a href="my-life.html">read more</a>
 </p>
 </div>
-</center>
-<center>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- footer section starts  -->
+<footer id="footer">
+  <section id="bottom_footer">
+  
+<div class="copyrightText" ><center> Copyright &copy;:<span id="copyright-year"></span>,Iyawaya Secondary School <br><br><span>All rights reserved</a></span>
+<span></center><br></div>
+</section>
+</footer>
+<!-- footer section ends -->
+
+<script>
+document.getElementById('copyright-year').textContent=new Date().getFullYear();
+</script>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

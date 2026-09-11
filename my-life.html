@@ -22,77 +22,219 @@ font-size:20px;
 margin:2px;
 color:black;
 }
+
+
+    .custom-navbar {
+      background-color: aqua !important;
+    }
+
+    .custom-navbar .navbar-brand {
+      color: orange !important;
+      font-weight: bold;
+    }
+
+    .custom-navbar .nav-link {
+      color: black !important;
+      font-weight: 500;
+    }
+
+    .custom-navbar .nav-link:hover {
+      color: orange !important;
+    }
+
+.carousel-item {
+  height: 90vh;
+   /* height: 500px;*/
+
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' if you want full fill */
+  background:silver;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 90vh;
+    background-color: black; /* fills gaps */
+  }
+}
+
+body {
+  padding-top: 40px; /* match navbar height */
+}
 </style>
 </head>
 <body>
+
+
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="default_bg_images/IMG-20230227-WA0007.jpg" alt="Full Stack">
+      <div class="carousel-caption text-start">
+        <h1 class="display-3 fw-bold"><em>Smart Teacher</em></h1>
+        <p><strong style=" color: orange;">Full Stack Web and App Developer </strong></p>
+        <a href="contact.html" class="btn btn-primary">Contact Him</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+         <img src="developer/Screenshot_20260911_230611_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption text-start">
+          <p><strong style=" color: yellow; font-size: 24;">Programming Languages Mastered:</strong></p>
+        <h1 class="display-3 fw-bold"><em>Python and JavaScript</em></h1>
+      </div>
+    </div>
+    
+    <div class="carousel-item">
+      <img src="developer/Screenshot_20260911_230704_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Expo & React Native</h1>
+      </div>
+    </div>
+     
+         
+    <div class="carousel-item">
+      <img src="developer/Screenshot_20260911_230359_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Django Rest Framework & Postgresql DBMS</h1>
+      </div>
+    </div>
+        
+    <div class="carousel-item">
+      <img src="bgs/IMG-20230227-WA0017.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Bootstrap,Git VCS/CI/CD & ReactJS</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+        <img src="default_bg_images/IMG-20230227-WA0005.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+         <h1>Html, Css & Vanilla JS</h1>
+      </div>
+    </div>     
+
+    <div class="carousel-item">
+      <img src="bgs/20251013_085406_001.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>From PUGU BOYS SECONDARY SCHOOL</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="default_bg_images/IMG-20250109-WA0019.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Of Mwanza Descendence</h1>
+      </div>
+    </div> 
+
+    <div class="carousel-item">
+      <img src="default_bg_images/IMG-20230227-WA0005.jpg" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Amazing Full Stack</h1>
+      </div>
+    </div>
+
+             
+    <div class="carousel-item">
+      <img src="developer/Screenshot_20260911_231805_Video Player.png" alt="Full Stack">
+      <div class="carousel-caption">
+        <h1>Amazing Full Stack</h1>
+      </div>
+    </div>
+
+  </div>
+
+            <!--BIOGRAPHY starts here-->
 <div class="kuleha"style="width:90vw;height:auto;margin:20px;">
-<p class="mwalimu">MWALIMU KULEHA'S BIOGRAPHY<a target="_blank"href="my-life.html"><img src="default_bg_images/IMG-20230227-WA0017.jpg" width="100%" height="auto"loading="lazy"class="sulphuric acid"alt="competent teacher ever"/>
-</a></p> 
+<p class="mwalimu">MWALIMU KULEHA'S BIOGRAPHY</p> 
+
 <p>
 Kuleha Kabilamhya Mpangamchu (a. k. a Google) is a teacher at iyawaya secondary school located in Inyala ward in Mbeya region, Tanzania. 
 </p>
+
 <p>
-He was born on 01 July 1995 at Mondo village in Kahama Town council , Tanzania.Both his father (KABILAMHYA MPANGAMCHU KULEHA) and mother (LUCIA NDITIMO MAKOBA) are from sukuma ethnic group from Magu and Ukerewe respectively</p>
- <br>
+He was born on 01 July 1995 at Mondo village in Kahama Town council , Tanzania.Both his father (KABILAMHYA MPANGAMCHU KULEHA) and mother (LUCIA NDITIMO MAKOBA) are from sukuma ethnic group from Magu and Ukerewe respectively
+</p><br>
+
  <center>
 <img src="default_bg_images/kahama.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
- </center>
+ </center><br><br>
 
-<br><br>
 <p>He started his educational journey in 2002 at Mondo Primary School and later joined Secondary Education at Bugisha Secondary School located in Kahama town council, Tanzania </p>
 <p>His school-life journey started well due  to his hard work and excellence in studies but turned into a bitter aloe in 2005 while he was in the fourth grade (standard four) when he suddenly fell ill with osteomyelitis (a disease caused by infection and inflammation in the bone) that led him to drop out of school for a long time (from July 2005 to  May 2006).</p>
-<p>He returned to school already disabled however he did not give up on school.
+<p>He returned to school already disabled however he did not give up on school.</p>
+
 <center>
 <img src="default_bg_images/IMG-20250109-WA0037-1.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
 </center>
-</p>
+
 <p>His classmates say Kuleha,was a funny,compassionate and cooperative student.</p>
 
 <p>His mastery in English vocabulary led his classmates to nickname him Dictionary as they claimed they were able to get the translation of any English vocabulary without the need of  an English-Swahili dictionary.</p> 
 
 <p>In 2010 as a second former (FII) , he was forced to drop out of school again to pursue treatment for health challenges that were still plaguing him. </p>
 
-Disappointed with school, in February 2013, he met his Physics teacher Jumanne Jackson (well known as mwalimu Jacky) who mentored and helped him get back to school to continue his studies. 
+<p>Disappointed with school, in February 2013, he met his Physics teacher Jumanne Jackson (well known as mwalimu Jacky) who mentored and helped him get back to school to continue his studies.</p> 
  <br>
+
 <p>In May 2013, Kuleha returned to school after permit from the regional administrative secretary given to continue with Form Three and finally graduated Form Four in 2015.</p>
 
-He was selected to join advanced secondary education at Pugu Boys Secondary School in Ilala municipality, Dar es Salaam city of Tanzania to study Physics, Chemistry and Biology. 
+<p>He was selected to join advanced secondary education at Pugu Boys Secondary School in Ilala municipality, Dar es Salaam city of Tanzania to study Physics, Chemistry and Biology.</p> 
+
 <center>
 <img src="default_bg_images/395707831682f1c1dd64fe8.842007251747917853S0147.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
-</center>
- <br><br>
-<p>At Pugu, he was a disciplined and diligent student in studies but health challenges did not stop so he studied with difficulty. 
+</center> <br><br>
 
-With singing being his hobby, while at school he loved singing especially songs by diamond (nimpende nani and lala salama)  and American artists like Lil Wayne (lollipop), Chris Brown (transform ya) , West life (queen of my heart) , Designer  (panda) etc.</p> 
+<p>At Pugu, he was a disciplined and diligent student in studies but health challenges did not stop so he studied with difficulty.</p> 
 
-<p>He performed at the Form Six Farewell ceremony 2017 and since then was nicknamed PANDA, the name of the song he performed from Designer.
+<p>With singing being his hobby, while at school he loved singing especially songs by diamond (nimpende nani and lala salama)  and American artists like Lil Wayne (lollipop), Chris Brown (transform ya) , West life (queen of my heart) , Designer  (panda) etc.</p> 
 
-Since then the boys (Pugu boys students) improved the nickname Dictionary to Google  to appreciate his vocabulary mastery in
+<p>He performed at the Form Six Farewell ceremony 2017 and since then was nicknamed PANDA, the name of the song he performed from Designer.</p>
+
+<p>Since then the boys (Pugu boys students) improved the nickname Dictionary to Google  to appreciate his vocabulary mastery in
  English language.</p> 
 
-"This is not just a dictionary, it is a Google search engine" One of the students was heard  saying !! and this marked the beginning of the nickname Google he is known for up to date. 
- <br>
+<p>"This is not just a dictionary, it is a Google search engine" One of the students was heard  saying !! and this marked the beginning of the nickname Google he is known for up to date.</p><br>
 <p>In July 2018, after graduating from Form Six, he was selected to join the National Service Army known as Jeshi la Kujenga Taifa (JKT) at 843 military camp, Nachingwea to learn some military and life skills.
 
-Nevertheless, he reported  at the Ruvu military camp of 832 kj where he was famously  known as Google the artist due to his love of singing.</p> 
-<center><img src="default_bg_images/20240901_132701.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
+<p>Nevertheless, he reported  at the Ruvu military camp of 832 kj where he was famously  known as Google the artist due to his love of singing.</p> 
+
+
+<center>
+   <img src="default_bg_images/20240901_132701.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
 </center>
 
-<p>He joined higher education at Mwenge Catholic University (MWECAU)  previously known as Saint Augustine University of Tanzania (SAUT) located in Moshi, Kilimanjaro, Tanzania to pursue a bachelor's  degree in education (Science). 
+<p>
+  He joined higher education at Mwenge Catholic University (MWECAU)  previously known as Saint Augustine University of Tanzania (SAUT) located in Moshi, Kilimanjaro, Tanzania to pursue a bachelor's  degree in education (Science). 
 </p>
+
 <center>
-<img src="default_bg_images/IMG-20230227-WA0005.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
- </center><br><br>
-<p>well known for his traditional wearing styles and the fond of music,his popularity spread to nearby universities like MoCU and KCMC where he had shows to perform in social events particularly freshers' parties.
+  <img src="default_bg_images/IMG-20230227-WA0005.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
+</center><br><br>
+
+<p>well known for his traditional wearing styles and the fond of music,his popularity spread to nearby universities like MoCU and KCMC where he had shows to perform in social events particularly freshers' parties.</p>
+
 <center>
-<img src="default_bg_images/IMG-20250109-WA0010.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
+   <img src="default_bg_images/IMG-20250109-WA0010.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
 </center>
+
 <center>
 <img src="default_bg_images/IMG-20250109-WA0019.jpg" width="86%" height="auto"loading="lazy"alt="competent teacher ever"/>
 </center
-</p>
-<p>Mwenge Catholic University offers computer courses so he also studied the basics of computer systems and languages especially:
-</p>
+
+<p>Mwenge Catholic University offers computer courses so he also studied the basics of computer systems and languages especially:</p>
     <ul>
       <li>Ms word 
 </li>
@@ -115,21 +257,23 @@ Python</li>
     </ul>
 
 
-<div>
+<div><br>
 <p>
- <br>
 Being a friend, Deborah was the closest assistant and  advisor to him through his rise and fall sharing both hard and happy times together. 
+
 <center>
 <img src="default_bg_images/debby_20241230_155644_TikTok Lite.jpg" width="86%" height="auto"loading="lazy"alt=""/>
 </center>
+
 <center>
 <img src="IMG-20230227-WA0011.jpg" width="86%" height="auto"loading="lazy"alt=""/>
 </center>
-</p>
+
 <p>
 He graduated in November 2021 with honorable grade performances and 7 months later (June 2022), he was employed on permanent terms at Iyawaya secondary school by The Tanzanian government. 
 </p>
 
+<p>
 Apart from teaching, he's also engaged in;
     <ul>
       <li> Graphics designing
@@ -137,14 +281,14 @@ Apart from teaching, he's also engaged in;
       <li>AI video editing
 </li>
       <li>Web development and designing:<br>
-Client-side programming languages :....... Html, css, js,bootstrap and react,<br>
-Server-side programming languages:…..js and  python
+Client-side programming languages :....... Html, CSS, Vanilla JavaScript,Bootstrap  and ReactJS frameworks,<br>
+Server-side programming languages:....Python/django , Advanced JavaScript ,Expo & React Native (TypeScript and JavaScript Xml).
 </li>
-      <li>Database and apis management :.... mysql and postgresql databases, api integration (FastAPI,JSON and AJAX) and different web development frameworks.
+      <li>Database and apis management :.... Postgresql databases, Django rest framework.
 </li>
 
     </ul>
-
+</p>
 
 
 </div>

@@ -94,11 +94,106 @@ width:96%;
 height:1024px;
 }
 }
+
+
+    /* 🔥 CUSTOM NAVBAR COLORS */
+    .custom-navbar {
+      background-color: aqua !important;
+    }
+
+    .custom-navbar .navbar-brand {
+      color: orange !important;
+      font-weight: bold;
+    }
+
+    .custom-navbar .nav-link {
+      color: black !important;
+      font-weight: 500;
+    }
+
+    .custom-navbar .nav-link:hover {
+      color: orange !important;
+    }
+
+/* 🔥 FIX CAROUSEL HEIGHT */
+.carousel-item {
+  height: 90vh;
+   /* height: 500px;*/
+
+}
+
+/* 🔥 FIX IMAGE FIT (NO CROPPING, NO BREAKING SLIDE) */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' if you want full fill */
+  background:silver;
+}
+
+/* 🔥 CAPTION IMPROVEMENT */
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* 🔥 DESKTOP: show FULL image (no cropping) */
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 90vh;
+    background-color: black; /* fills gaps */
+  }
+}
+
+body {
+  padding-top: 40px; /* match navbar height */
+}
+
+
+
+
 </style>
 
 </head>
 <body>
  <section id="contact" class="container-fluid p-4" style="min-height: 100vh; background-color: black; color: yellow;">
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">Iyawaya Secondary School</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="overview.html">general overview</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="location.html">location</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="developer-profile.html">developer profile</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
    <div class="text-center text-warning mb-4" style="font-size: 1.2rem;">
     <h1 class="headline" style="font-size: 3rem;color:white;">Contact Us Through</h1>
     <strong style="font-size: 1.5rem;">PO-RALG</strong><br><br>
@@ -135,7 +230,7 @@ height:1024px;
   
   <!-- Gmail Button -->
   <div class="d-flex justify-content-center mb-4">
-    <a href="mailto:iyawayasec@gmail.com" class="btn d-flex flex-column align-items-center p-3" style="width: 70%; background: orange; color: white; font-size: 1.7rem;border-radius:15px;">
+    <a href="mailto:gouglepaste7624@gmail.com" class="btn d-flex flex-column align-items-center p-3" style="width: 70%; background: orange; color: white; font-size: 1.7rem;border-radius:15px;">
       <i class="bi bi-envelope-fill mb-1" style="font-size: 2rem; color: white;"></i>
       <span class="fw-bold">Email:&nbsp iyawayasec@gmail.com</span>
     </a>
@@ -152,6 +247,19 @@ height:1024px;
   </div>
 </section>
  
+
+ <!-- footer section starts  -->
+<footer id="footer">
+  <section id="bottom_footer">
+<div class="copyrightText" ><center> Copyright &copy;:<span id="copyright-year"></span>,Iyawaya Secondary School <br><br><span>All rights reserved</a></span>
+<span></center><br></div>
+</section>
+</footer>
+<!-- footer section ends -->
+
+<script>
+document.getElementById('copyright-year').textContent=new Date().getFullYear();
+</script>
  
   <script>
     const whatsappBtn = document.getElementById('whatsappBtn');
