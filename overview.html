@@ -78,6 +78,1317 @@ color:black;
   }
 }
 
+
+
+
+
+/* =========================================================
+   IYAWAYA SECONDARY SCHOOL
+   HOME OPTION 2
+   4 IMAGE 3D HERO SLIDER
+
+   ORIGINAL STYLE:
+   rotateX()
+   rotateY()
+   z-index
+   transform-origin
+
+   NO JAVASCRIPT REQUIRED
+========================================================= */
+
+
+/* =========================================================
+   MAIN HERO
+========================================================= */
+
+.home-choice {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    text-transform: capitalize;
+
+    background: #000;
+
+    padding-left: 0 !important;
+
+    margin-left: 0 !important;
+
+    perspective: 1200px;
+
+    -webkit-perspective: 1200px;
+
+    z-index: 9;
+}
+
+
+/* =========================================================
+   EVERY SLIDE
+========================================================= */
+
+.home-choice .slide {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    -webkit-transform-origin: bottom center;
+
+    transform-origin: bottom center;
+
+    -webkit-transform-style: preserve-3d;
+
+    transform-style: preserve-3d;
+
+}
+
+
+/* =========================================================
+   IMPORTANT:
+   EVERYTHING INSIDE THE SLIDE MOVES WITH THE SLIDE
+========================================================= */
+
+.home-choice .slide .slider_encloser {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-position: center center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-attachment: scroll;
+
+    -webkit-transform-style: preserve-3d;
+
+    transform-style: preserve-3d;
+
+}
+
+
+/* =========================================================
+   FOUR ACTUAL HERO IMAGES
+========================================================= */
+
+
+/* ---------------- SLIDE 1 ---------------- */
+
+.home-choice .slide:nth-of-type(1) .slider_encloser {
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,0.20),
+            rgba(0,0,0,0.20)
+        ),
+
+        url("bgs/20250502_174025.jpg");
+
+}
+
+
+/* ---------------- SLIDE 2 ---------------- */
+
+.home-choice .slide:nth-of-type(2) .slider_encloser {
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,0.20),
+            rgba(0,0,0,0.20)
+        ),
+
+        url("bgs/20251013_085341.jpg");
+
+}
+
+
+/* ---------------- SLIDE 3 ---------------- */
+
+.home-choice .slide:nth-of-type(3) .slider_encloser {
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,0.20),
+            rgba(0,0,0,0.20)
+        ),
+
+        url("bgs/20250502_174536.jpg");
+
+}
+
+
+/* ---------------- SLIDE 4 ---------------- */
+
+.home-choice .slide:nth-of-type(4) .slider_encloser {
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,0.20),
+            rgba(0,0,0,0.20)
+        ),
+
+        url("bgs/20240923_075940.jpg");
+
+}
+
+
+/* =========================================================
+   4 SLIDE ANIMATION TIMING
+
+   24 seconds total
+
+   Slide 1 = starts at 18 seconds
+   Slide 2 = starts at 12 seconds
+   Slide 3 = starts at 6 seconds
+   Slide 4 = starts immediately
+
+   This creates the continuous cycle.
+========================================================= */
+
+.home-choice .slide:nth-of-type(1) {
+
+    -webkit-animation:
+        slideTop
+        24s
+        18s
+        ease-in-out
+        infinite;
+
+    animation:
+        slideTop
+        24s
+        18s
+        ease-in-out
+        infinite;
+
+}
+
+
+.home-choice .slide:nth-of-type(2) {
+
+    -webkit-animation:
+        slideRight
+        24s
+        12s
+        ease-in-out
+        infinite;
+
+    animation:
+        slideRight
+        24s
+        12s
+        ease-in-out
+        infinite;
+
+}
+
+
+.home-choice .slide:nth-of-type(3) {
+
+    -webkit-animation:
+        slideLeft
+        24s
+        6s
+        ease-in-out
+        infinite;
+
+    animation:
+        slideLeft
+        24s
+        6s
+        ease-in-out
+        infinite;
+
+}
+
+
+.home-choice .slide:nth-of-type(4) {
+
+    -webkit-animation:
+        slideBottom
+        24s
+        0s
+        ease-in-out
+        infinite;
+
+    animation:
+        slideBottom
+        24s
+        0s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================================
+   SLIDE 1
+   TOP / ROTATE X
+========================================================= */
+
+.home-choice .slide:nth-of-type(1) {
+
+    -webkit-transform-origin: top center;
+
+    transform-origin: top center;
+
+}
+
+
+@-webkit-keyframes slideTop {
+
+    0%, 5% {
+
+        -webkit-transform: rotateX(0);
+
+        transform: rotateX(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        -webkit-transform: rotateX(-90deg);
+
+        transform: rotateX(-90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        -webkit-transform:
+            rotateX(-90deg)
+            translateY(-150%);
+
+        transform:
+            rotateX(-90deg)
+            translateY(-150%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateX(-90deg)
+            translateY(-150%);
+
+        transform:
+            rotateX(-90deg)
+            translateY(-150%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateX(0)
+            translateY(0);
+
+        transform:
+            rotateX(0)
+            translateY(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+@keyframes slideTop {
+
+    0%, 5% {
+
+        transform: rotateX(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        transform: rotateX(-90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        transform:
+            rotateX(-90deg)
+            translateY(-150%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        transform:
+            rotateX(-90deg)
+            translateY(-150%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        transform:
+            rotateX(0)
+            translateY(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   SLIDE 2
+   RIGHT / ROTATE Y
+========================================================= */
+
+.home-choice .slide:nth-of-type(2) {
+
+    -webkit-transform-origin: right center;
+
+    transform-origin: right center;
+
+}
+
+
+@-webkit-keyframes slideRight {
+
+    0%, 5% {
+
+        -webkit-transform: rotateY(0);
+
+        transform: rotateY(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        -webkit-transform: rotateY(-90deg);
+
+        transform: rotateY(-90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        -webkit-transform:
+            rotateY(-90deg)
+            translateX(100%);
+
+        transform:
+            rotateY(-90deg)
+            translateX(100%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateY(-90deg)
+            translateX(100%);
+
+        transform:
+            rotateY(-90deg)
+            translateX(100%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateY(0)
+            translateX(0);
+
+        transform:
+            rotateY(0)
+            translateX(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+@keyframes slideRight {
+
+    0%, 5% {
+
+        transform: rotateY(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        transform: rotateY(-90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        transform:
+            rotateY(-90deg)
+            translateX(100%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        transform:
+            rotateY(-90deg)
+            translateX(100%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        transform:
+            rotateY(0)
+            translateX(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   SLIDE 3
+   LEFT / ROTATE Y
+========================================================= */
+
+.home-choice .slide:nth-of-type(3) {
+
+    -webkit-transform-origin: left center;
+
+    transform-origin: left center;
+
+}
+
+
+@-webkit-keyframes slideLeft {
+
+    0%, 5% {
+
+        -webkit-transform: rotateY(0);
+
+        transform: rotateY(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        -webkit-transform: rotateY(90deg);
+
+        transform: rotateY(90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        -webkit-transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateY(0)
+            translateX(0);
+
+        transform:
+            rotateY(0)
+            translateX(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+@keyframes slideLeft {
+
+    0%, 5% {
+
+        transform: rotateY(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        transform: rotateY(90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        transform:
+            rotateY(0)
+            translateX(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   SLIDE 4
+   BOTTOM NAME IN ORIGINAL CSS
+   BUT ACTUAL EFFECT IS ROTATE Y
+========================================================= */
+
+.home-choice .slide:nth-of-type(4) {
+
+    -webkit-transform-origin: left center;
+
+    transform-origin: left center;
+
+}
+
+
+@-webkit-keyframes slideBottom {
+
+    0%, 5% {
+
+        -webkit-transform: rotateY(0);
+
+        transform: rotateY(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        -webkit-transform: rotateY(90deg);
+
+        transform: rotateY(90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        -webkit-transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        -webkit-transform:
+            rotateY(0)
+            translateX(0);
+
+        transform:
+            rotateY(0)
+            translateX(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+@keyframes slideBottom {
+
+    0%, 5% {
+
+        transform: rotateY(0);
+
+        z-index: 4;
+
+    }
+
+
+    10% {
+
+        transform: rotateY(90deg);
+
+    }
+
+
+    13% {
+
+        z-index: 4;
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    50% {
+
+        z-index: -1;
+
+        transform:
+            rotateY(90deg)
+            translateX(-100%);
+
+    }
+
+
+    53%, 80% {
+
+        z-index: -1;
+
+        transform:
+            rotateY(0)
+            translateX(0);
+
+    }
+
+
+    81%, 100% {
+
+        z-index: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   SCHOOL NAME
+========================================================= */
+
+.home-choice .school_name {
+
+    position: absolute;
+
+    top: 20%;
+
+    left: 0;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    text-transform: capitalize;
+
+    text-shadow: 2px 2px #000;
+
+    font-size: 2.5rem;
+
+    color: #00B894;
+
+    z-index: 20;
+
+}
+
+
+/* =========================================================
+   SCHOOL MOTTO
+========================================================= */
+
+.home-choice .sec_option_school_motto {
+
+    position: absolute;
+
+    top: 55%;
+
+    left: 0;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: white;
+
+    z-index: 20;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.home-choice .sec_option_logo {
+
+    position: absolute;
+
+    top: 10%;
+
+    left: 0;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    background: transparent;
+
+    text-align: center;
+
+    z-index: 20;
+
+}
+
+
+.home-choice .sec_option_logo img {
+
+    max-width: 120px;
+
+    height: auto;
+
+    display: inline-block;
+
+}
+
+
+/* =========================================================
+   START HERE BUTTON
+========================================================= */
+
+.home-choice .sec_option_start_hereBTN {
+
+    position: absolute;
+
+    top: 78%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    -webkit-transform: translateX(-50%);
+
+    font-size: 17px;
+
+    text-shadow:
+        -2px 0 orange,
+        0 2px orange,
+        2px 0 orange,
+        0 -2px orange;
+
+    font-family: sans;
+
+    font-stretch: 50%;
+
+    margin: 0;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            orange 0%,
+            orange 100%
+        );
+
+    box-shadow:
+        0 5px 15px 0 rgba(0,0,0,0.6);
+
+    animation:
+        float 6s ease-in-out infinite;
+
+    -webkit-animation:
+        float 6s ease-in-out infinite;
+
+    z-index: 30;
+
+    text-decoration: none;
+
+}
+
+
+/* =========================================================
+   START HERE HOVER
+========================================================= */
+
+.home-choice .sec_option_start_hereBTN:hover {
+
+    color: black;
+
+    animation: none;
+
+    -webkit-animation: none;
+
+}
+
+
+/* =========================================================
+   FLOATING BUTTON ANIMATION
+========================================================= */
+
+@keyframes float {
+
+    0% {
+
+        box-shadow:
+            0 5px 15px 0 rgba(0,0,0,0.6);
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+
+    }
+
+
+    50% {
+
+        box-shadow:
+            0 25px 15px 0 rgba(0,0,0,0.2);
+
+        transform:
+            translateX(-50%)
+            translateY(-20px);
+
+    }
+
+
+    100% {
+
+        box-shadow:
+            0 5px 15px 0 rgba(0,0,0,0.6);
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA
+========================================================= */
+
+.home-choice .sec_option_social_media {
+
+    position: absolute;
+
+    top: 82%;
+
+    left: 0;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    z-index: 20;
+
+}
+
+
+/* =========================================================
+   NEWS UPDATES BUTTON
+========================================================= */
+
+.home-choice .NEWS_section_home_link {
+
+    position: absolute;
+
+    top: 90%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    -webkit-transform: translateX(-50%);
+
+    width: 12em;
+
+    height: 3em;
+
+    padding-top: .6em;
+
+    margin: 0;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    border: solid 2px rgba(34,68,65,0.9);
+
+    text-transform: capitalize;
+
+    text-shadow: 2px 2px black;
+
+    font-size: 1.6rem;
+
+    color: #f3f3f3;
+
+    font-weight: normal;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(34,68,65,0.9) 0%,
+            rgba(14,14,14,1) 100%
+        );
+
+    z-index: 30;
+
+    text-decoration: none;
+
+}
+
+
+.home-choice .NEWS_section_home_link:hover {
+
+    text-decoration: none;
+
+    border:
+        solid 2px
+        rgba(17,34,33,0.9);
+
+    background: transparent;
+
+}
+
+
+/* =========================================================
+   NEWS "UPDATES"
+========================================================= */
+
+.home-choice .NEWS_section_home_link .title_bold {
+
+    font-size: 1.8rem;
+
+    color: green;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .home-choice {
+
+        min-height: 100vh;
+
+        height: 100vh;
+
+        perspective: 900px;
+
+        -webkit-perspective: 900px;
+
+    }
+
+
+    .home-choice .school_name {
+
+        top: 20%;
+
+        font-size: 2rem;
+
+        padding: 0 10px;
+
+    }
+
+
+    .home-choice .sec_option_logo {
+
+        top: 10%;
+
+    }
+
+
+    .home-choice .sec_option_logo img {
+
+        max-width: 100px;
+
+    }
+
+
+    .home-choice .sec_option_start_hereBTN {
+
+        top: 60%;
+
+        font-size: 10px;
+
+        padding: 12px;
+
+    }
+
+
+    .home-choice .NEWS_section_home_link {
+
+        top: 80%;
+
+        font-size: 1.2rem;
+        
+        padding: 10px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .home-choice .school_name {
+
+        top: 20%;
+
+        font-size: 1.6rem; 
+
+        text-align: center; 
+    }
+
+
+    .home-choice .sec_option_logo img {
+
+        max-width: 85px;
+
+    }
+
+
+    .home-choice .sec_option_start_hereBTN {
+
+        top: 70%;
+
+    }
+
+
+    .home-choice .NEWS_section_home_link {
+
+        top: 85%;
+
+    }
+
+}
+
+
+
+	
 </style>
 </head>
 <body>
@@ -167,6 +1478,347 @@ color:black;
 
 
 
+
+<!-- =========================================================
+     IYAWAYA HOME OPTION 2
+     4 SLIDES
+========================================================= -->
+
+<section id="home" class="home-choice">
+
+    <!-- ===================== SLIDE 1 ===================== -->
+
+    <div class="slide">
+
+        <div class="slider_encloser">
+
+            <p class="school_name">
+                <strong>
+                    THE UNITED REPUBLIC OF TANZANIA<br>
+                    IYAWAYA SECONDARY SCHOOL<br>
+                    P.O.BOX 2407<br>
+                    MBEYA
+                </strong>
+            </p>
+
+            <p class="sec_option_school_motto">
+                <strong></strong>
+            </p>
+
+            <a
+                href="#iyawaya"
+                class="sec_option_start_hereBTN"
+            >
+                Start here>>
+            </a>
+
+
+            <section class="sec_option_social_media">
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-facebook"
+                    title="Facebook"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-instagram"
+                    title="Instagram"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-linkedin"
+                    title="Linkedin"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-twitter"
+                    title="Twitter"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-youtube"
+                    title="Youtube"
+                ></a>
+
+            </section>
+
+
+            <a
+                href="#NEWS_section"
+                class="NEWS_section_home_link"
+                title="READ OUR LATEST NEWS"
+            >
+                NEWS<span class="title_bold">UPDATES</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===================== SLIDE 2 ===================== -->
+
+    <div class="slide">
+
+        <div class="slider_encloser">
+
+            <p class="school_name">
+                <strong>
+                    THE UNITED REPUBLIC OF TANZANIA<br>
+                    IYAWAYA SECONDARY SCHOOL<br>
+                    P.O.BOX 2407<br>
+                    MBEYA
+                </strong>
+            </p>
+
+            <p class="sec_option_school_motto">
+                <strong></strong>
+            </p>
+
+
+            <a
+                href="#iyawaya"
+                class="sec_option_start_hereBTN"
+            >
+                Start here>>
+            </a>
+
+
+            <section class="sec_option_social_media">
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-facebook"
+                    title="Facebook"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-instagram"
+                    title="Instagram"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-linkedin"
+                    title="Linkedin"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-twitter"
+                    title="Twitter"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-youtube"
+                    title="Youtube"
+                ></a>
+
+            </section>
+
+
+            <a
+                href="#NEWS_section"
+                class="NEWS_section_home_link"
+                title="READ OUR LATEST NEWS"
+            >
+                NEWS<span class="title_bold">UPDATES</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===================== SLIDE 3 ===================== -->
+
+    <div class="slide">
+
+        <div class="slider_encloser">
+
+            <p class="school_name">
+                <strong>
+                    THE UNITED REPUBLIC OF TANZANIA<br>
+                    IYAWAYA SECONDARY SCHOOL<br>
+                    P.O.BOX 2407<br>
+                    MBEYA
+                </strong>
+            </p>
+
+            <p class="sec_option_school_motto">
+                <strong></strong>
+            </p>
+
+
+
+            <a
+                href="#iyawaya"
+                class="sec_option_start_hereBTN"
+            >
+                Start here>>
+            </a>
+
+
+            <section class="sec_option_social_media">
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-facebook"
+                    title="Facebook"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-instagram"
+                    title="Instagram"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-linkedin"
+                    title="Linkedin"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-twitter"
+                    title="Twitter"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-youtube"
+                    title="Youtube"
+                ></a>
+
+            </section>
+
+
+            <a
+                href="#NEWS_section"
+                class="NEWS_section_home_link"
+                title="READ OUR LATEST NEWS"
+            >
+                NEWS<span class="title_bold">UPDATES</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===================== SLIDE 4 ===================== -->
+
+    <div class="slide">
+
+        <div class="slider_encloser">
+
+            <p class="school_name">
+                <strong>
+                    THE UNITED REPUBLIC OF TANZANIA<br>
+                    IYAWAYA SECONDARY SCHOOL<br>
+                    P.O.BOX 2407<br>
+                    MBEYA
+                </strong>
+            </p>
+
+            <p class="sec_option_school_motto">
+                <strong></strong>
+            </p>
+
+
+            <a
+                href="#iyawaya"
+                class="sec_option_start_hereBTN"
+            >
+                Start here>>
+            </a>
+
+
+            <section class="sec_option_social_media">
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-facebook"
+                    title="Facebook"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-instagram"
+                    title="Instagram"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-linkedin"
+                    title="Linkedin"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-twitter"
+                    title="Twitter"
+                ></a>
+
+                <a
+                    style="display: none;"
+                    href="#"
+                    class="fa fa-youtube"
+                    title="Youtube"
+                ></a>
+
+            </section>
+
+
+            <a
+                href="#NEWS_section"
+                class="NEWS_section_home_link"
+                title="READ OUR LATEST NEWS"
+            >
+                NEWS<span class="title_bold">UPDATES</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     END IYAWAYA HOME OPTION 2
+========================================================= -->
+  
+	
 
 
   <div class="service" id="iyawayaservices" style="background:silver;" margin-top:20px;>
@@ -432,6 +2084,23 @@ He teaches CHEMISTRY and COMPUTER SCIENCE with a deep understanding in programin
 document.getElementById('copyright-year').textContent=new Date().getFullYear();
 </script>
 
+<script>
+window.addEventListener("load", function () {
+
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+
+        setTimeout(function () {
+            loader.classList.add("fade-out");
+        }, 400);
+
+    }
+
+});
+</script>
+
+	
 <script src="wow.js"></script>
 <script src="js/wow.min.js">
 </script>
